@@ -1,0 +1,8 @@
+#!/bin/sh
+# Refuse the commit when the staged content contains a detected secret.
+set -eu
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "Install gitleaks before committing; the staged secret scan is required." >&2
+  exit 1
+fi
+exec gitleaks git --staged --redact --no-banner .
