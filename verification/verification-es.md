@@ -1,3 +1,12 @@
+---
+id: verification-es
+lang: es
+type: verification
+owner: repository
+status: verified
+sources: ["local-verification"]
+---
+
 # Verificación local de secretos
 
 El repositorio usa Gitleaks 8.30.1 para cambios preparados y un contenedor fijado por digest para historial confirmado. Instalar Gitleaks y Docker y activar el hook versionado en un clon nuevo:

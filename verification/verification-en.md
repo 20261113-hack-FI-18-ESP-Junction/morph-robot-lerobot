@@ -1,3 +1,12 @@
+---
+id: verification-en
+lang: en
+type: verification
+owner: repository
+status: verified
+sources: ["local-verification"]
+---
+
 # Local secret verification
 
 This repository uses Gitleaks 8.30.1 for staged changes and a digest-pinned container for committed history. Install Gitleaks and Docker, then enable the tracked hook in a new clone:
